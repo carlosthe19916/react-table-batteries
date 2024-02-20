@@ -70,7 +70,7 @@ export const SelectFilterControl = <TItem, TFilterCategoryKey extends string>({
         selections={selections || []}
         onSelect={(_, value) => onFilterSelect(value)}
         isOpen={isFilterDropdownOpen}
-        placeholderText="Any"
+        placeholderText={category.title}
         isDisabled={isDisabled || category.selectOptions.length === 0}
       >
         {renderSelectOptions(category.selectOptions)}
